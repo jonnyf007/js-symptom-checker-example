@@ -6,8 +6,8 @@
  */
 
 const settings = {
-  'app-id': '',
-  'app-key': ''
+  'app-id': 'b8c029c5',
+  'app-key': 'fc679b664bd979bb4f29b9d7a9f626ab'
 };
 
 export default settings;

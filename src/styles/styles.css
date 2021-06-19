@@ -1,38 +1,100 @@
 .main-container {
-    padding: 0;
+  padding: 0;
+  margin: 0px;
+  position: absolute;
+  top: 0;
 }
-
+.logo {
+  width: 100px;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+}
 .card {
-    border-radius: 0;
-    border: none;
+  border-radius: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+.card-header {
+  background: url("/public/assets/resource/call-header-bg.png"),
+    linear-gradient(135deg, #252665 0%, #16a3b3 100%);
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: white;
+  text-transform: uppercase;
+}
+.card-text {
+  border-radius: 10px;
+  background: #ffffff40;
+  color: black;
+  padding: 20px;
+}
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #294d7c;
+}
+.summary-item {
+  margin-bottom: 10px;
+}
+.text-muted {
+  color: #f8f9fa !important;
 }
 
-.summary-item {
-    margin-bottom: 10px;
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.padded {
+  height: 100%;
+  padding: 10%;
 }
 
 #step-container {
-    min-height: 470px;
-    padding: 12px 20px;
+  min-height: 470px;
+  z-index: 1;
+  position: relative;
+  /* top: 50px; */
+  z-index: 0;
+  overflow: scroll;
+  padding-bottom: 100px;
+  background-image: url("/public/assets/resource/home-hero-simple.jpg");
+  color: white;
+  background-size: cover;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
 }
 
+.custom-control {
+  text-align: left;
+}
 
-@media (min-width: 576px) {
-    body {
-        padding-top: 15px;
-    }
-
-    .main-container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .card {
-        border-radius: 4px;
-        border: 1px solid rgba(0, 0, 0, 0.125);
-    }
+@media (max-width: 576px) {
+  #step-container {
+    min-height: 470px;
+    z-index: 1;
+    position: relative;
+    /* top: 50px; */
+    z-index: 0;
+    overflow: scroll;
+    padding-bottom: 100px;
+    background-image: url("/public/assets/resource/home-hero-simple.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+  }
 }

@@ -9,12 +9,11 @@ module.exports = {
   entry: './src/index.js',
   devtool: 'source-map',
   output: {
-    path: path.join(__dirname, '/public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public')
   },
   devServer: {
-    publicPath: '/public/',
-    inline: true,
+    publicPath: '/public',
     host: '127.0.0.1'
   },
   resolve: {
@@ -51,6 +50,13 @@ module.exports = {
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader?name=[path][name].[ext]'
+      },
+      {
+        test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+        loader: 'file-loader',
+        options: {
+          name: 'assets/resource/[name].[ext]'
+        }
       }
     ]
   }

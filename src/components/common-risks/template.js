@@ -12,7 +12,7 @@ const template = (context) => {
           <form>
             ${riskHtmlMapper(risks, context.commonRiskFactors)}
           </form>
-          <p class="text-muted small">
+          <p class="text-muted small pt-3">
             <i class="fa fa-info-circle"></i> Above you see the most common risk factors. 
             Although /diagnosis may return questions about risk factors, 
             when implementing a symptom checker we recommend asking the patient about common risk factors 

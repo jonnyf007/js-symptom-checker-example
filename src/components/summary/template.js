@@ -20,7 +20,7 @@ const conditionsHtmlMapper = (conditions) => {
           </div>
         </div>
       </div>
-      <div class="explanation col-12"></div>
+      <div class="explanation col-24"></div>
     </div>          
   `);
 };
@@ -33,9 +33,14 @@ const template = (context) => {
         <p>Based on the interview, you could suffer from:</p>
         ${conditionsHtmlMapper(data.conditions)}
         <div class="alert alert-warning" role="alert">
+        <i class="fa fa-info-circle"></i>
+        Please note that the list below may not be complete and is provided solely for informational purposes 
+        and is not a qualified medical opinion.
+      </div>
+        <div class="alert alert-success" role="alert">
           <i class="fa fa-info-circle"></i>
-          Please note that the list below may not be complete and is provided solely for informational purposes 
-          and is not a qualified medical opinion.
+          For a more accurate opinion please consult a doctor at 
+          <a target="_blank" href="http://www.docto.com.au">www.docto.com.au </a>
         </div>
       </div>
     `;

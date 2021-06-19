@@ -11,10 +11,13 @@ export default class NLPView extends View {
   constructor(el, context) {
     const handleFeelChange = (e) => {
       const feel = e.target.value;
+      console.log(feel);
       if (feel) {
-        this.context.api.parse(this.context.patient.toParse(feel)).then((response) => {
-          return this.updateObservations(response.mentions);
-        });
+        if (this.context.api) {
+          this.context.api.parse(this.context.patient.toParse(feel)).then((response) => {
+            return this.updateObservations(response.mentions);
+          });
+        }
       }
     };
 
