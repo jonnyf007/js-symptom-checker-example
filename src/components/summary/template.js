@@ -40,7 +40,7 @@ const template = (context) => {
         <div class="alert alert-success" role="alert">
           <i class="fa fa-info-circle"></i>
           For a more accurate opinion please consult a doctor at 
-          <a target="_blank" href="http://www.docto.com.au">www.docto.com.au </a>
+          <a target="_blank" href="http://www.docto.com.au/consult-dr-now">docto.com.au </a>
         </div>
       </div>
     `;

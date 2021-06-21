@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * Created by Tomasz Gabrysiak @ Infermedica on 08/02/2017.
  */
@@ -8,27 +9,21 @@ const template = (context) => {
     <div class="centered">
       <h5 class="card-title">Welcome to Docto's Symptom Checker.</h5>
       <div class="card-text center">
-        <p>
-          We created this example to help you work with our API, 
-          and show you how to implement a simple symptom checker &mdash; 
-          an application that mimics doctor's interview and gives you a preliminary diagnosis basing on 
-          our mathematical model.
+        <p class="text-white">
+          <strong>Before using the symptom checker please remember that:</strong>
         </p>
-        <p>
-          Visit our 
-          <i class="fa fa-github"></i> 
-          <a href="https://github.com/infermedica/js-symptom-checker-example">GitHub page</a> 
-          to grab the source code of this example as well as a guide on how to start working with it.
-        </p>
-        <p>
-          The most recent API documentation is always available on our 
-          <a href="https://developer.infermedica.com/docs/api">developer portal</a>.
-        </p>
-        <p>
-          Please click 
-          <span class="badge badge-primary">Next</span> 
-          to move to the first question.
-        </p>
+        <ul>
+        <li>
+            <strong>This is not a diagnosis.</strong> Docto's Symptom Checker is for informational purposes and it's not a qualified medical opinion.
+        </li>
+                <li>
+            <strong>Do not use in emergencies</strong> In case of health emergency, call you local emergency number immediately.
+        </li>
+                        <li>
+            <strong>Your data is safe</strong> The information you share is anonymous and not shared with anyone.
+        </li>
+        </ul>
+        <p> <Strong>By Clicking on the <span class="badge badge-primary">Next</span> button bellow you accept this terms of service. </Strong></p>
       </div></div>
     `);
   });
