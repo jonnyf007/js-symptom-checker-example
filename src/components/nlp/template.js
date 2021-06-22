@@ -26,16 +26,6 @@ const template = (context) => {
           <span class="text-success">present <i class="fa fa-plus-circle"></i></span>
           identified observations.
         </p>
-        <p class="text-muted small pt-3">
-          <i class="fa fa-info-circle"></i> This screen uses our NLP engine to find symptoms in a written text.
-          Evidence found in text will be marked as initial which is important to our engine. 
-          Please read more about initial evidence 
-          <a target="_blank" href="https://developer.infermedica.com/docs/diagnosis#gathering-initial-evidence">
-            here
-          </a>.
-          All of the identified symptoms will be added to your interview after clicking
-          <span class="badge badge-primary">Next</span>.
-        </p>
       </div>
     `);
   });

@@ -78,6 +78,11 @@ button {
   border-color: #17a2b8;
 }
 
+.btn-primary.disabled,
+.btn-primary:disabled {
+  visibility: hidden;
+}
+
 .custom-control {
   text-align: left;
 }

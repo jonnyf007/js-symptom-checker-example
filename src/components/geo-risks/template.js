@@ -12,9 +12,6 @@ const template = (context) => {
         <form>
           ${riskHtmlMapper(risks, context.locationRiskFactors)}
         </form>
-        <p class="text-muted small pt-3">
-          <i class="fa fa-info-circle"></i> Above you see risk factors related to geographical location.
-        </p>
       </div>
     `;
   });
