@@ -41,7 +41,7 @@ module.exports = {
         }
       }, {
         test: /\.css$/,
-        use: ['style-loader', {loader: 'css-loader'}]
+        use: ['style-loader', { loader: 'css-loader' }]
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -55,7 +55,7 @@ module.exports = {
         test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: 'file-loader',
         options: {
-          name: 'assets/resource/[name].[ext]'
+          name: '/assets/resource/[name].[ext]'
         }
       }
     ]

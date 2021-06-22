@@ -66,6 +66,7 @@
   padding-bottom: 100px;
   background-image: url("/public/assets/resource/home-hero-simple.jpg");
   color: white;
+  background-color:  rgb(90, 89, 89);
   background-size: cover;
 }
 
@@ -98,6 +99,7 @@ button {
     padding-bottom: 100px;
     background-image: url("/public/assets/resource/home-hero-simple.jpg");
     color: white;
+    background-color:  rgb(90, 89, 89);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 75%;
