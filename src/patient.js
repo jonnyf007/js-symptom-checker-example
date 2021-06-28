@@ -8,7 +8,8 @@ export default class Patient {
   constructor() {
     this.symptoms = {};
     this.sex = 'male';
-    this.age = {value: 30};
+    // eslint-disable-next-line object-curly-spacing
+    this.age = { value: 30 };
   }
 
   setSex(sex) {
@@ -16,7 +17,10 @@ export default class Patient {
   }
 
   setAge(age) {
-    this.age = {value: age};
+    // eslint-disable-next-line radix
+    const parseAge = Number.parseInt(age);
+    // eslint-disable-next-line object-curly-spacing
+    this.age = { value: parseAge };
   }
 
   addSymptomsGroup(group) {
