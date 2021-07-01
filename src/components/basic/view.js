@@ -1,9 +1,11 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quotes */
 /**
  * Created by Tomasz Gabrysiak @ Infermedica on 08/02/2017.
  */
 
-import View from '../../base/view';
-import template from './template';
+import View from "../../base/view";
+import template from "./template";
 
 export default class BasicView extends View {
   constructor(el, context) {
@@ -12,18 +14,23 @@ export default class BasicView extends View {
     };
 
     const handleAgeChange = (e) => {
-      this.context.patient.setAge(parseInt(e.target.value, 10));
+      const age = parseInt(e.target.value, 10);
+      if (age > 12) {
+        this.context.patient.setAge(age);
+      } else {
+        this.context.patient.setAge(12);
+      }
     };
 
     const binds = {
-      '.input-sex': {
-        type: 'change',
-        listener: handleSexChange
+      ".input-sex": {
+        type: "change",
+        listener: handleSexChange,
       },
-      '#input-age': {
-        type: 'change',
-        listener: handleAgeChange
-      }
+      "#input-age": {
+        type: "change",
+        listener: handleAgeChange,
+      },
     };
 
     super(el, template, context, binds);

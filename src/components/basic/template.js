@@ -30,7 +30,7 @@ const template = (context) => {
             <div class="form-group row">
               <label for="input-age" class="col-sm-2 col-form-label">Age</label>
               <div class="col-sm-2">
-                <input type="number" class="form-control" id="input-age" value="30">
+                <input min="12" type="number" class="form-control" id="input-age" value="30">
               </div>
             </div>
           </form>
