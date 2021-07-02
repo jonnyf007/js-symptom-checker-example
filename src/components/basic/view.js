@@ -18,6 +18,7 @@ export default class BasicView extends View {
       if (age > 12) {
         this.context.patient.setAge(age);
       } else {
+        e.target.value = 12;
         this.context.patient.setAge(12);
       }
     };
